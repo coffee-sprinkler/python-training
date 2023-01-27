@@ -1,0 +1,221 @@
+/* CSS RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* MAIN CSS */
+.md-18 {
+  font-size: 18px;
+}
+.md-24 {
+  font-size: 24px;
+}
+.md-36 {
+  font-size: 36px;
+}
+.md-48 {
+  font-size: 48px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  background-image: linear-gradient(#59354f, #9d5262);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.python-form {
+  display: grid;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 3rem;
+}
+
+.python-form h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.python-form .input-group {
+  position: relative;
+}
+
+.python-form .input-group input {
+  padding: 1rem;
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 0.5rem;
+}
+
+.python-form .input-group input:focus {
+  outline: 0;
+}
+
+.python-form .input-group input:focus + label {
+  opacity: 0;
+}
+
+.python-form .input-group label {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  font-size: 1em;
+  translate: -50%;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.python-form .input-group input:focus + label,
+.python-form .input-group input:valid + label {
+  font-size: 0.8em;
+}
+
+.python-form .input-group input:invalid {
+  outline: 2px solid red;
+}
+
+.python-form .input-submit input {
+  width: 100%;
+  padding-block: 1.15em;
+  border-radius: 0.5rem;
+  background-color: #f9b55f;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: 0;
+  border: 0;
+}
